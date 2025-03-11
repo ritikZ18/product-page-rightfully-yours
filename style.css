@@ -10,17 +10,85 @@
 
 body{
 /* color: white; */
+background: #fafff8;
 }
 
 
 .container{
     /* background: linear-gradient(180deg, #ffffff, #00201b); */
+    background: #fff9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    
 
 }
 
 
 
 .logo img{
-    width: 5%;
+    width: 6%;
     height: 5vh;
+    display: block;
+    margin: 0px;
+}
+
+h1, h4 {
+    text-align: center;
+    
+}
+
+.button{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btn-redirect{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    background-color: azure;
+    cursor: pointer;
+    
+    border: none;
+    transition: background-color 0.3s ease;
+
+}
+.btn-redirect:nth-child(1){
+    background: #ffc1c1;
+}
+.btn-redirect:nth-child(1):hover{
+    background: #ff9696;
+}
+
+.btn-redirect:hover{
+    background-color: aliceblue;
+}
+
+.moto{
+    text-align: center;
+    color: #ff3535;
+}
+
+.challenges-1, .system-architecture { 
+    margin-top: 30px;
+}
+
+.info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.box {
+    flex-basis: 30%; 
+    margin: 10px;
+    padding: 20px;
+    background: #ffe7e7;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
