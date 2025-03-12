@@ -4,81 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rightfully Yours - Benefit Notification Tool</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="https://via.placeholder.com/150x150" alt="Rightfully Yours Logo" class="logo">
+<body class="font-sans text-gray-900 bg-[#F8FFF0]">
+    <!-- Header Section -->
+    <header class="py-8 shadow-md bg-white border-b border-gray-300">
+        <div class="container mx-auto flex flex-wrap items-center justify-between px-8">
+            <!-- Logo -->
+            <div class="w-56 h-56">
+                <img src="03_11_2025_X-Design.png" alt="Rightfully Yours Logo" class="w-full h-full object-contain bg-transparent">
             </div>
-            <div class="header-content">
-                <div class="meta-container">
-                    <img src="https://via.placeholder.com/80x40" alt="Meta Logo" class="meta-logo">
-                    <h1>Rightfully Yours</h1>
-                </div>
-                <p class="tagline">Making Government Benefits More Accessible, Rightfully Yours has joined the lablab NEXT x Meta program!</p>
+            <!-- Title and Tagline -->
+            <div class="text-center md:text-right flex-1">
+                <h1 class="text-6xl font-bold text-green-800">Rightfully Yours</h1>
+                <p class="text-xl text-gray-700">Making Government Benefits More Accessible, Rightfully Yours has joined the lablab NEXT x Meta program!</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#github">Github</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <section class="goal">
-        <div class="container">
-            <h2>Our goal</h2>
-            <p>With millions eligible for government benefits worldwide, the Benefit Notification Tool aims to bridge the awareness gap and increase accessibility for underserved communities.</p>
-            <hr>
-        </div>
-    </section>
-
-    <section class="team">
-        <div class="container">
-            <h2>Meet the team</h2>
-            <p>Founded by [Founder Names], the team brings expertise in data analytics, government systems, and AI-driven automation, ensuring a reliable and secure platform for benefit notifications.</p>
-            
-            <div class="team-members">
-                <div class="member">
-                    <div class="avatar"></div>
-                    <h3>Name</h3>
-                    <p>Position</p>
-                </div>
-                <div class="member">
-                    <div class="avatar"></div>
-                    <h3>Name</h3>
-                    <p>Position</p>
-                </div>
-                <div class="member">
-                    <div class="avatar"></div>
-                    <h3>Name</h3>
-                    <p>Position</p>
-                </div>
-            </div>
-            
-            <p class="contact">Contact: Email</p>
-        </div>
-    </section>
-
-    <section class="what-we-do">
-        <div class="container">
-            <h2>What we do</h2>
-            <div class="content-container">
-                <div class="text-content">
-                    <p>They provide an automated email notification service that monitors government websites for benefit updates, ensuring real-time, unbiased, and personalized notifications. Their language-agnostic approach makes accessing benefits simpler and more inclusive for diverse users, including non-native speakers and those with low digital literacy.</p>
-                </div>
-                <div class="video-container">
-                    <div class="video-placeholder">Youtube</div>
+    <!-- What We Do Section -->
+    <section class="py-16 bg-[#E8F5E9]">
+        <div class="container mx-auto px-8">
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-left">What We Do</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <p class="text-gray-800 text-xl">They provide an automated email notification service that monitors government websites for benefit updates, ensuring real-time, unbiased, and personalized notifications. Their language-agnostic approach makes accessing benefits simpler and more inclusive for diverse users, including non-native speakers and those with low digital literacy.</p>
+                <div class="rounded-lg overflow-hidden shadow-md h-full">
+                    <iframe class="w-full h-[32rem]" src="https://www.youtube.com/embed/jLphWh1i8cQ" title="YouTube video" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>We're excited to support Rightfully Yours' mission to simplify access to government benefits and empower individuals with timely, accurate information! 🚀</p>
+    <!-- Our Goal Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-8 text-right">
+            <h2 class="text-4xl font-bold text-green-800 mb-8">Our Goal</h2>
+            <p class="text-xl text-gray-800">With millions eligible for government benefits worldwide, the Benefit Notification Tool aims to bridge the awareness gap and increase accessibility for underserved communities.</p>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="py-16 bg-[#E8F5E9]">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-800 mb-8">Meet the Team</h2>
+            <p class="text-gray-800 text-xl mb-8">Founded by [Founder Names], the team brings expertise in data analytics, government systems, and AI-driven automation, ensuring a reliable and secure platform for benefit notifications.</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center flex flex-col items-center h-80">
+                    <div class="w-32 h-32 bg-gray-400 rounded-full mb-6"></div>
+                    <h5 class="text-2xl font-semibold text-green-900">Name</h5>
+                    <p class="text-lg text-gray-700">Position</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center flex flex-col items-center h-80">
+                    <div class="w-32 h-32 bg-gray-400 rounded-full mb-6"></div>
+                    <h5 class="text-2xl font-semibold text-green-900">Name</h5>
+                    <p class="text-lg text-gray-700">Position</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center flex flex-col items-center h-80">
+                    <div class="w-32 h-32 bg-gray-400 rounded-full mb-6"></div>
+                    <h5 class="text-2xl font-semibold text-green-900">Name</h5>
+                    <p class="text-lg text-gray-700">Position</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-green-700 text-white text-center">
+        <div class="container mx-auto">
+            <p class="text-xl">We’re excited to support Rightfully Yours’ mission to simplify access to government benefits and empower individuals with timely, accurate information! 🚀</p>
         </div>
     </footer>
 </body>

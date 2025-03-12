@@ -1,123 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+Custom styles to complement Bootstrap
 
+/* General styles */
 body {
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+/* Header styles */
 header {
-    padding: 20px 0;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 150px;
-    height: auto;
-}
-
-.logo-container {
-    width: 20%;
-}
-
-.header-content {
-    width: 60%;
-    text-align: center;
-}
-
-.meta-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.meta-logo {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.tagline {
-    font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-nav {
-    width: 20%;
-    text-align: right;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-section {
-    padding: 40px 0;
-    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 4.0rem;
+    font-weight: 700;
+    color: #2a7d2a;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    background-image: radial-gradient(circle, #4CAF50, #8BC34A);
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meta-logo {
+    height: 35px;
+    width: auto;
+}
+
+/* Section styles */
+section {
+    position: relative;
 }
 
 h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2a7d2a;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
 }
 
-.goal p, .team p {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    font-size: 18px;
+h2:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #4CAF50;
+    bottom: -10px;
+    left: 25%;
 }
 
-hr {
-    max-width: 600px;
-    margin: 20px auto;
-    border: none;
-    height: 2px;
-    background-color: #333;
+.bg-light {
+    background-color: #f9fbf7 !important;
 }
 
-.team-members {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin: 40px 0;
+/* Card styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
 }
 
-.member {
-    text-align: center;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Team member styles */
 .avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background-color: #333;
-    margin: 0 auto 15px;
     position: relative;
     overflow: hidden;
 }
@@ -146,75 +112,54 @@ hr {
     border-radius: 50%;
 }
 
-.contact {
-    margin-top: 20px;
-    font-weight: bold;
+/* Button styles */
+.btn-outline-success {
+    border-width: 2px;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
 }
 
-.what-we-do .content-container {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+.btn-outline-success:hover {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
 }
 
-.text-content {
-    flex: 1;
-    text-align: left;
-    padding-right: 30px;
-}
-
-.video-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-placeholder {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
+/* Footer styles */
 footer {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #f8f8f8;
+    background: linear-gradient(to right, #4CAF50, #8BC34A) !important;
 }
 
-/* Green logo styling for the first image */
-.logo {
-    background-image: radial-gradient(circle, #4CAF50, #8BC34A);
-    border-radius: 50%;
+/* Custom horizontal rule */
+hr {
+    background-color: #4CAF50;
+    opacity: 0.7;
 }
 
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
+/* Video container */
+.ratio {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .text-md-end, .justify-content-md-end {
+        text-align: center !important;
+        justify-content: center !important;
     }
     
-    .logo-container, .header-content, nav {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+    h1 {
+        font-size: 2rem;
     }
     
-    .team-members {
-        flex-direction: column;
-        gap: 30px;
+    .logo {
+        width: 100px;
+        height: 100px;
     }
     
-    .what-we-do .content-container {
-        flex-direction: column;
-    }
-    
-    .text-content {
-        padding-right: 0;
-        margin-bottom: 30px;
+    .meta-logo {
+        height: 30px;
     }
 }
