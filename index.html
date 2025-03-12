@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rightfully Yours - Benefit Notification Tool</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans text-gray-900 bg-[#F8FFF0]">
+<body class="font-sans text-gray-900 bg-[#F8FFF0] mx-auto">
     <!-- Header Section -->
-    <header class="py-8 shadow-md bg-white border-b border-gray-300">
+    <header class="py-8  ">
         <div class="container mx-auto flex flex-wrap items-center justify-between px-8">
             <!-- Logo -->
-            <div class="w-56 h-56">
+            <div class="w-56 h-56" id="logo">
                 <img src="03_11_2025_X-Design.png" alt="Rightfully Yours Logo" class="w-full h-full object-contain bg-transparent">
             </div>
             <!-- Title and Tagline -->
-            <div class="text-center md:text-right flex-1">
-                <h1 class="text-6xl font-bold text-green-800">Rightfully Yours</h1>
-                <p class="text-xl text-gray-700">Making Government Benefits More Accessible, Rightfully Yours has joined the lablab NEXT x Meta program!</p>
+            <div class="text-center md:text-right flex-1" id="scale-up">
+                <h1 class="text-6xl font-bold text-green-800" id="title" id="heading">Rightfully Yours</h1>
+                <p class="text-xl text-gray-700" style="margin-top: 20px;">Making Government Benefits More Accessible, Rightfully Yours has joined the lablab NEXT x Meta program!</p>
             </div>
         </div>
     </header>
 
     <!-- What We Do Section -->
-    <section class="py-16 bg-[#E8F5E9]">
+    <section class="py-16 bg-[#E8F5E9]" id="scale-up">
         <div class="container mx-auto px-8">
-            <h2 class="text-4xl font-bold text-green-800 mb-8 text-left">What We Do</h2>
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-left" id="heading">What We Do</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <p class="text-gray-800 text-xl">They provide an automated email notification service that monitors government websites for benefit updates, ensuring real-time, unbiased, and personalized notifications. Their language-agnostic approach makes accessing benefits simpler and more inclusive for diverse users, including non-native speakers and those with low digital literacy.</p>
+                <p class="text-gray-800 text-xl" >They provide an automated email notification service that monitors government websites for benefit updates, ensuring real-time, unbiased, and personalized notifications. Their language-agnostic approach makes accessing benefits simpler and more inclusive for diverse users, including non-native speakers and those with low digital literacy.</p>
                 <div class="rounded-lg overflow-hidden shadow-md h-full">
                     <iframe class="w-full h-[32rem]" src="https://www.youtube.com/embed/jLphWh1i8cQ" title="YouTube video" allowfullscreen></iframe>
                 </div>
@@ -36,18 +37,18 @@
     </section>
 
     <!-- Our Goal Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-8 text-right">
-            <h2 class="text-4xl font-bold text-green-800 mb-8">Our Goal</h2>
-            <p class="text-xl text-gray-800">With millions eligible for government benefits worldwide, the Benefit Notification Tool aims to bridge the awareness gap and increase accessibility for underserved communities.</p>
+    <section class="py-16" id="our-goal" id="scale-up">
+        <div class="container mx-auto px-8 text-center" id="scale-up">
+            <h2 class="text-4xl font-bold  mb-8" id="heading">Our Goal</h2>
+            <p class="text-xl ">With millions eligible for government benefits worldwide, our Benefit Notification Tool aims to bridge the awareness gap and increase accessibility of government schemes for under-served communities.</p>
         </div>
     </section>
 
     <!-- Meet the Team Section -->
-    <section class="py-16 bg-[#E8F5E9]">
+    <section class="py-16 bg-[#E8F5E9]" id="scale-up">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-800 mb-8">Meet the Team</h2>
-            <p class="text-gray-800 text-xl mb-8">Founded by [Founder Names], the team brings expertise in data analytics, government systems, and AI-driven automation, ensuring a reliable and secure platform for benefit notifications.</p>
+            <h2 class="text-4xl font-bold text-green-800 mb-8" id="heading">Meet the Team</h2>
+            <p class="text-gray-800 text-xl mb-8">Founded by <span class="highlight">Shikha Verma</span>, the team brings expertise in data analytics, government systems, and AI-driven automation, ensuring a reliable and secure platform for benefit notifications.</p>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="bg-white p-8 rounded-lg shadow-md text-center flex flex-col items-center h-80">
                     <div class="w-32 h-32 bg-gray-400 rounded-full mb-6"></div>
@@ -69,10 +70,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 bg-green-700 text-white text-center">
-        <div class="container mx-auto">
-            <p class="text-xl">We’re excited to support Rightfully Yours’ mission to simplify access to government benefits and empower individuals with timely, accurate information! 🚀</p>
+    <footer class="py-8 text-white ">
+        <div class="container mx-auto flex">
+        <div class="flex flex-col justify-center items-start text-left w-1/4 space-y-4" >
+            <a href="https://github.com/Ztrimus/gov-benefit-llama-hack" class="text-black hover:text-lime-400 mr-4" style="margin-right: 10px;">GitHub</a>
+            <a href="https://www.youtube.com/watch?v=jLphWh1i8cQ" class="text-black hover:text-lime-400">Watch Demo</a>
         </div>
+
+            <div class="flex flex-col justify-center items-start text-left w-3/4 space-y-4"> 
+
+                <p class="text-xl">We’re excited to support Rightfully Yours’ mission to simplify access to government benefits and empower individuals with timely, accurate information! 🚀</p>
+            </div>
+        </div>
+
     </footer>
 </body>
 </html>
