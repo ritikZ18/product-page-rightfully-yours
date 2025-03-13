@@ -172,7 +172,9 @@ h2:after {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(to right, #4CAF50, #8BC34A) !important;
+    /* background: linear-gradient(120deg, to bottom #62b165, #8BC34A) !important; */
+    background-image: linear-gradient(to bottom, #E8F5E9, #7ab67f);
+    color: #000;
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: space-between; */
@@ -192,7 +194,7 @@ footer a {
 
 }
 footer a:hover{
-    color: azure;
+    color: rgb(0, 65, 5);
     transform: translateY(-2px);
 }
 
